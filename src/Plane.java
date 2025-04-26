@@ -1,17 +1,19 @@
-public class Plane extends Vehicles implements Transportation{
-    private final Wheel wheel1, wheel2;
-    private final Wing wing1, wing2;
+public class Plane extends Vehicle implements Transportation{
+    private final Wheel wheel1;
+    private final Wheel wheel2;
+    private final Wing wing1;
+    private final Wing wing2;
     private final Propeller propeller;
 
     public Plane(){
-        this.wheel1 = new Wheel();
-        this.wheel2 = new Wheel();
-        this.wing1 = new Wing();
-        this.wing2 = new Wing();
-        this.propeller = new Propeller();
+        this.wheel1 = new Wheel("Plane wheel");
+        this.wheel2 = new Wheel("Plane wheel");
+        this.wing1 = new Wing("Plane wing");
+        this.wing2 = new Wing("Plane wing");
+        this.propeller = new Propeller("Plane propeller");
     }
     @Override
-    public void carriesCargo() {
+    public void carryCargo() {
 
     }
 }

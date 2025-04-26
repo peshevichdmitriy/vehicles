@@ -1,11 +1,11 @@
-public class Tanker extends Vehicles implements Transportation{
+public class Tanker extends Vehicle implements Transportation{
     private final Propeller propeller;
 
     public Tanker(){
-        this.propeller = new Propeller();
+        this.propeller = new Propeller("Tanker propeller");
     }
     @Override
-    public void carriesCargo() {
+    public void carryCargo() {
 
     }
 }

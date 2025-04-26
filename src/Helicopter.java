@@ -1,16 +1,19 @@
-public class Helicopter extends  Vehicles implements Transportation{
-    private final Wheel wheel1, wheel2, wheel3;
-    private final Propeller propeller1, propeller2;
+public class Helicopter extends  Vehicle implements Transportation{
+    private final Wheel wheel1;
+    private final Wheel wheel2;
+    private final Wheel wheel3;
+    private final Propeller propeller1;
+    private final Propeller propeller2;
 
     public Helicopter(){
-        this.wheel1 = new Wheel();
-        this.wheel2 = new Wheel();
-        this.wheel3 = new Wheel();
-        this.propeller1 = new Propeller();
-        this.propeller2 = new Propeller();
+        this.wheel1 = new Wheel("Helicopter wheel");
+        this.wheel2 = new Wheel("Helicopter wheel");
+        this.wheel3 = new Wheel("Helicopter wheel");
+        this.propeller1 = new Propeller("Helicopter propeller");
+        this.propeller2 = new Propeller("Helicopter propeller");
     }
     @Override
-    public void carriesCargo() {
+    public void carryCargo() {
 
     }
 }

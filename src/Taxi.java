@@ -1,10 +1,13 @@
-public class Taxi extends Vehicles{
-    private final Wheel wheel1, wheel2, wheel3, wheel4;
+public class Taxi extends Vehicle{
+    private final Wheel wheel1;
+    private final Wheel wheel2;
+    private final Wheel wheel3;
+    private final Wheel wheel4;
 
     public Taxi(){
-        this.wheel1 = new Wheel();
-        this.wheel2 = new Wheel();
-        this.wheel3 = new Wheel();
-        this.wheel4 = new Wheel();
+        this.wheel1 = new Wheel("Taxi whell");
+        this.wheel2 = new Wheel("Taxi whell");
+        this.wheel3 = new Wheel("Taxi whell");
+        this.wheel4 = new Wheel("Taxi whell");
     }
 }

@@ -1,11 +1,11 @@
-public class Speedboat extends Vehicles implements Transportation{
+public class Speedboat extends Vehicle implements Transportation{
     private final Propeller propeller;
 
     public Speedboat(){
-        this.propeller = new Propeller();
+        this.propeller = new Propeller("Speedboat propeller");
     }
     @Override
-    public void carriesCargo() {
+    public void carryCargo() {
 
     }
 }

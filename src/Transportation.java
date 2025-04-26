@@ -1,3 +1,3 @@
 public interface Transportation {
-    public void carriesCargo();
+    public void carryCargo();
 }
